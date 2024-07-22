@@ -1,3 +1,26 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+
+@layer utilities {
+    .scrollbar-glow {
+      scrollbar-width: thin;
+      scrollbar-color: rgba(255, 255, 255, 0.75) transparent;
+    }
+  
+    .scrollbar-glow::-webkit-scrollbar {
+      width: 12px;
+    }
+  
+    .scrollbar-glow::-webkit-scrollbar-thumb {
+      background-color: rgba(255, 255, 255, 0.75);
+      border-radius: 10px;
+      box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.75); /* Apply the custom shadow */
+    }
+  
+    .scrollbar-glow::-webkit-scrollbar-track {
+      background: transparent;
+    }
+  }

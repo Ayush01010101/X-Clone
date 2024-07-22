@@ -1,0 +1,27 @@
+/* For Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: white transparent;
+  }
+  
+  /* Webkit browsers (Chrome, Safari, etc.) */
+  *::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: white;
+    border-radius: 6px;
+    border: 3px solid transparent; /* create space around thumb */
+    box-shadow: 0 0 20px rgba(255, 255, 255, 1); /* Increase glow intensity */
+  }
+  
+  *::-webkit-scrollbar-thumb:hover {
+    background-color: white;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 1); /* Stronger glow on hover */
+  }
+  
