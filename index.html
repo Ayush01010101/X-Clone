@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
     <title>Document</title>
    
 
@@ -13,26 +13,26 @@
 </head>
 
 <body class="bg-black ">
-    <div class="container flex w-4/5 mx-auto   text-white ">
-        <div class="start  w-[600px] h-full">
+    <div class="container flex w-full md:w-4/5 md:mx-auto text-white ">
+        <div class="start w-[60px] md:w-[600px]  h-full">
 
             <div class="logo invert text-black">
                 <img class="text-white w-9" src="Logo/x.svg " alt="">
             </div>
-            <div class="sidebar flex flex-col invert text-black mt-7 text-xl font-semibold border-2">
+            <div class="sidebar flex flex-col items-center md:items-start invert text-black mt-7 text-xl font-semibold border-2">
 
                 <!-- for icons and feature
                   -->
                 <ul>
-                    <li class="flex gap-x-5 py-3 invert hover:bg-gray-800 hover:rounded-2xl cursor-pointer">
+                    <li class="flex gap-x-5 py-3  invert hover:bg-gray-800 hover:rounded-2xl cursor-pointer">
                         <img class="w-6 invert" src="Icon/home.svg" alt="Home icon">
-                        <h2 class="invert">Home</h2>
+                        <h2 class="invert hidden md:block">Home</h2>
                     </li>
 
 
                     <li class="flex gap-x-5 py-3 hover:bg-gray-800 hover:rounded-2xl cursor-pointer invert">
                         <img class="w-6 invert" src="Icon/explore.svg" alt="Home icon">
-                        <h2 class="invert">Explore</h2>
+                        <h2 class="invert hidden md:block">Explore</h2>
                     </li>
 
 
@@ -40,7 +40,7 @@
 
                     <li class="flex gap-x-5 py-3 hover:bg-gray-800 hover:rounded-2xl cursor-pointer  invert">
                         <img class="w-6 invert" src="Icon/notification.svg" alt="Home icon">
-                        <h2 class="invert">Notification</h2>
+                        <h2 class="invert hidden md:block">Notification</h2>
                     </li>
 
 
@@ -48,7 +48,7 @@
 
                     <li class="flex gap-x-5 py-3 hover:bg-gray-800 hover:rounded-2xl cursor-pointer  invert">
                         <img class="w-6 invert" src="Icon/message.svg" alt="Home icon">
-                        <h2 class="invert">Messages</h2>
+                        <h2 class="invert hidden md:block">Messages</h2>
                     </li>
 
 
@@ -56,7 +56,7 @@
 
                     <li class="flex gap-x-5 py-3  hover:bg-gray-800 hover:rounded-2xl cursor-pointer invert">
                         <img class="w-6 invert" src="Icon/Grok.svg" alt="Home icon">
-                        <h2 class="invert">Grok</h2>
+                        <h2 class="invert hidden md:block">Grok</h2>
                     </li>
 
 
@@ -64,7 +64,7 @@
 
                     <li class="flex gap-x-5 py-3 hover:bg-gray-800 hover:rounded-2xl cursor-pointer  invert">
                         <img class="w-6 invert" src="Icon/save.svg" alt="Home icon">
-                        <h2 class="invert">Bookmark</h2>
+                        <h2 class="invert hidden md:block">Bookmark</h2>
                     </li>
 
 
@@ -74,7 +74,7 @@
 
                     <li class="flex gap-x-5 py-3 hover:bg-gray-800 hover:rounded-2xl cursor-pointer invert">
                         <img class="w-6 invert" src="Icon/Com.svg" alt="Home icon">
-                        <h2 class="invert">Commmunities</h2>
+                        <h2 class="invert hidden md:block">Commmunities</h2>
                     </li>
 
 
@@ -84,7 +84,7 @@
 
                     <li class="flex gap-x-5 py-3 hover:bg-gray-800 hover:rounded-2xl cursor-pointer invert">
                         <img class="w-6 invert" src="Logo/x.svg" alt="Home icon">
-                        <h2 class="invert">Premium</h2>
+                        <h2 class="invert hidden md:block">Premium</h2>
                     </li>
 
 
@@ -92,17 +92,17 @@
 
                     <li class="flex gap-x-5 py-3 hover:bg-gray-800 hover:rounded-2xl cursor-pointer  invert">
                         <img class="w-6 invert" src="Icon/profile.svg" alt="Home icon">
-                        <h2 class="invert">Profile</h2>
+                        <h2 class="invert hidden md:block">Profile</h2>
                     </li>
 
 
                     <li class="flex gap-x-5 py-3 hover:bg-gray-800 hover:rounded-2xl cursor-pointer  invert">
                         <img class="w-6 invert" src="Icon/more.svg" alt="Home icon">
-                        <h2 class="invert">More</h2>
+                        <h2 class="invert hidden md:block">More</h2>
                     </li>
-
+                    
                     <li>
-                        <button class="bg-[#1d9bf0] invert  w-[237px] py-2 text-white rounded-2xl mt-5">Post</button>
+                        <button class=" hidden md:block  bg-[#1d9bf0] invert  w-[237px] py-2 text-white rounded-2xl mt-5">Post</button>
                     </li>
 
 
@@ -110,13 +110,13 @@
 
             </div>
 
-            <div class="profile flex gap-3 items-center mt-2  rounded-2xl p-3 hover:bg-[#2e2f2f]">
+            <div class="profile flex gap-3 items-center mt-2 rounded-2xl p-3 hover:bg-[#2e2f2f]">
                 <img class="w-10 rounded-[50%]" src="Images/sasuke image.jpg" alt="">
                 <div class="content flex flex-col">
-                    <h2 class="font-bold tracking-wider">Name Surname</h2>
-                    <h2 class="font-light opacity-60 tracking-wide">@0101 Name</h2>
+                    <h2 class="font-bold tracking-wider  hidden md:block">Name Surname</h2>
+                    <h2 class="font-light opacity-60 tracking-wide hidden md:block">@0101 Name</h2>
                 </div>
-                <div class="more font-bold">...</div>
+                <div class="more font-bold hidden md:block">...</div>
             </div>
 
         </div>
@@ -149,7 +149,7 @@
                 </div>
 
                 <!-- icons -->
-                <div class="options flex  ml-16 mr-5 justify-between pb-2">
+                <div class="options flex  ml-16 mr-5 justify-between pb-2 flex-wrap">
                     <div class="icons flex gap-5">
                         <img class="w-3 cursor-pointer " src="option_icon/image.svg" alt="imagelogo">
                         <img class="w-3 cursor-pointer " src="option_icon/GIF.svg" alt="imagelogo">
@@ -160,7 +160,7 @@
 
                     </div>
 
-                    <button class="bg-[#0f4e78] py-2 px-8 rounded-3xl">Post</button>
+                    <button class="bg-[#0f4e78] py-2 px-8 rounded-3xl hidden md:block">Post</button>
 
                 </div>
             </div>
@@ -171,7 +171,7 @@
                 <div class="profilecard flex mx-4  items-center">
                     <img class="w-16 scale-50  rounded-full" src="Images/elon musk image.jpg" alt="">
                     <div class="text">
-                        <div class="profile_info flex">
+                        <div class="profile_info flex flex-wrap">
                             <h2 class="font-bold">Elon Musk</h2>
                             <img class="w-8  h-6 scale-75 text-center" src="Icon/bluetick.svg" alt="">
                             <img class="invert w-3 relative right-2" src="Logo/x.svg " alt="">
@@ -185,7 +185,7 @@
 
                 </div>
                 <div class="post_image">
-                    <img class=" rounded-2xl scale-90 ml-4 relative bottom-4 " src="Images/post image.jpeg" alt="">
+                    <img class=" rounded-2xl scale-75 md:scale-90 ml-4 relative bottom-4 " src="Images/post image.jpeg" alt="">
                 </div>
                 <div class="icons flex w-full invert items-center justify-around relative left-6 opacity-50 bottom-5 ">
                     <img class="w-5" src="Posticon/comment.svg" alt="">
@@ -198,10 +198,10 @@
             </div>
 
             <div class="post">
-                <div class="profilecard flex mx-4  items-center">
+                <div class="profilecard flex mx-4  ">
                     <img class="w-16 scale-50  rounded-full" src="Images/elon musk image.jpg" alt="">
                     <div class="text">
-                        <div class="profile_info flex">
+                        <div class="profile_info flex flex-wrap">
                             <h2 class="font-bold">Elon Musk</h2>
                             <img class="w-8  h-6 scale-75 text-center" src="Icon/bluetick.svg" alt="">
                             <img class="invert w-3 relative right-2" src="Logo/x.svg " alt="">
@@ -214,13 +214,11 @@
 
 
                 </div>
-                <div class="post_card w-[420px] ml-16 font-bold border border-gray-800 rounded-2xl p-4">
-                    <h3 class="font-normal">
+                <div class="post_card  md:w-[350px] ml-14 md:ml-16 font-bold border border-gray-800 rounded-2xl p-2 md:p-4 ">
+                    <h3 class="font-normal ">
 
                         Trump is flipping every moderate I know… and many life-long democrats, by speaking to all
-                        Americans in a way that the democrats have forgotten how to do.
-
-                        There are a lot of lessons here for @TheDemocrats, from having a ....</h3>
+                        Americans in a way that the democrats have forgotten how to do.There are a lot of lessons here for @TheDemocrats, from having a ....</h3>
                     <h3 class="text-blue">Show more</h3>
                 </div>
             </div>
@@ -242,7 +240,7 @@
 
 
 
-        <div class="end w-4/5 border space-y-5 border-[#292c2f] rounded-xl">
+        <div class="end w-4/5 border space-y-5 hidden md:block border-[#292c2f] rounded-xl">
 
 
             <!-- search -->
